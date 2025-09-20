@@ -163,7 +163,7 @@ jobs:
             git push origin "v${NEW_VERSION}"
           fi
 
-      # Envio de e-mail EM CASO DE FALHA no pipeline mai 
+      # Envio de e-mail EM CASO DE FALHA no pipeline bom dia
         
       - name: Send failure email
         if: failure()
