@@ -24,8 +24,6 @@ export default [
         __dirname: "readonly",
         module: "readonly",
         require: "readonly",
-        // Testes
-        jest: "readonly"
       }
     },
     rules: {
@@ -37,6 +35,17 @@ export default [
   // ajustes específicos para testes
   {
     files: ["tests/**/*.test.js"],
+    languageOptions: {
+      globals: {
+        describe: "readonly",
+        it: "readonly",
+        expect: "readonly",
+        test: "readonly",
+        beforeEach: "readonly",
+        afterEach: "readonly",
+        jest: "readonly",
+      },
+    },
     rules: {
       "no-console": "off"
     }
